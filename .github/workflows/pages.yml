@@ -19,10 +19,18 @@ jobs:
           # No build step required for this site; ensure files are present
           ls -la
 
+      - name: Set deploy token
+        id: set-token
+        run: |
+          echo "DEPLOY_TOKEN=${GH_PAGES_PAT:-${GITHUB_TOKEN}}" >> $GITHUB_ENV
+        env:
+          GH_PAGES_PAT: ${{ secrets.GH_PAGES_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ env.DEPLOY_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./
           user_name: 'github-actions[bot]'
