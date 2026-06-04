@@ -737,8 +737,18 @@
         const email = document.getElementById('form-email').value;
         const message = document.getElementById('form-message').value;
 
-        // Visual success state
-        alert(`Obrigado pelo contato, ${name}! Em breve retornarei no e-mail: ${email}.`);
+        // Construct mailto link
+        const recipient = 'lima.jesuscc@gmail.com';
+        const subject = encodeURIComponent(`Contato Portfólio - ${name}`);
+        const body = encodeURIComponent(
+          `Nome: ${name}\n` +
+          `E-mail para resposta: ${email}\n\n` +
+          `Mensagem:\n${message}`
+        );
+
+        // Trigger native email client
+        window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+        
         contactForm.reset();
       });
     });
