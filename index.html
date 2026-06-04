@@ -1,696 +1,744 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Igor L. de Jesus — Senior Full Stack Developer (Ruby on Rails & React)</title>
-    <meta name="description" content="Senior Full Stack Developer specializing in Ruby on Rails, React and AI integrations. Available for remote/hybrid roles. Priorize • Appgas • performance & scalable systems.">
-    <meta property="og:title" content="Igor L. de Jesus — Senior Full Stack Developer">
-    <meta property="og:description" content="Building scalable web & mobile systems with Ruby on Rails, React and modern AI integrations.">
-    <meta property="og:image" content="http://static.photos/technology/1200x630/42">
-    <meta property="og:url" content="https://igordejesus.dev">
-    <meta property="og:type" content="website">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        dark: '#0b0f14',
-                        cyan: '#00E5FF',
-                        magenta: '#FF40B5',
-                    },
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                        mono: ['JetBrains Mono', 'monospace'],
-                    },
-                    animation: {
-                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'glow-cyan': 'glow-cyan 2s ease-in-out infinite alternate',
-                        'glow-magenta': 'glow-magenta 2s ease-in-out infinite alternate',
-                    },
-                    keyframes: {
-                        'glow-cyan': {
-                            '0%': { 'text-shadow': '0 0 5px rgba(0, 229, 255, 0.5)', 'box-shadow': '0 0 5px rgba(0, 229, 255, 0.5)' },
-                            '100%': { 'text-shadow': '0 0 20px rgba(0, 229, 255, 0.8)', 'box-shadow': '0 0 20px rgba(0, 229, 255, 0.8)' },
-                        },
-                        'glow-magenta': {
-                            '0%': { 'text-shadow': '0 0 5px rgba(255, 64, 181, 0.5)', 'box-shadow': '0 0 5px rgba(255, 64, 181, 0.5)' },
-                            '100%': { 'text-shadow': '0 0 20px rgba(255, 64, 181, 0.8)', 'box-shadow': '0 0 20px rgba(255, 64, 181, 0.8)' },
-                        },
-                    },
-                }
-            }
-        }
-    </script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <style>
-        body {
-            background-color: #0b0f14;
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, rgba(0,229,255,0.1) 0%, rgba(255,64,181,0.1) 100%);
-        }
-        .neon-border {
-            border: 1px solid rgba(0, 229, 255, 0.3);
-            box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
-        }
-        .neon-border-magenta {
-            border: 1px solid rgba(255, 64, 181, 0.3);
-            box-shadow: 0 0 10px rgba(255, 64, 181, 0.3);
-        }
-        .hover-glow:hover {
-            box-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
-            transition: all 0.3s ease;
-        }
-        .hover-glow-magenta:hover {
-            box-shadow: 0 0 15px rgba(255, 64, 181, 0.5);
-            transition: all 0.3s ease;
-        }
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -38px;
-            top: 0;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: #00E5FF;
-            box-shadow: 0 0 10px rgba(0, 229, 255, 0.8);
-        }
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: -28px;
-            top: 0;
-            width: 2px;
-            height: 100%;
-            background: linear-gradient(to bottom, #00E5FF, #FF40B5);
-        }
-        .skill-chip {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .skill-chip:hover {
-            background: rgba(0, 229, 255, 0.1);
-            border: 1px solid rgba(0, 229, 255, 0.5);
-        }
-        .project-card {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 229, 255, 0.2);
-        }
-        input, textarea {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        input:focus, textarea:focus {
-            outline: none;
-            border-color: #00E5FF;
-            box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
-        }
-        ::selection {
-            background: rgba(0, 229, 255, 0.3);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Igor L. de Jesus — Senior Full Stack Developer (Rails & React)</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Desenvolvedor Full Stack Sênior especializado em Ruby on Rails, React e automações inteligentes. Portfólio profissional de projetos e experiências.">
+  <meta name="keywords" content="Igor Lima de Jesus, Ruby on Rails, React, Senior Developer, Appgas, Priorize, Cinnamon Run Club, Noblex Contabilidade, Fasttask, Web Development, Full Stack">
+  <meta name="author" content="Igor L. de Jesus">
+  
+  <meta property="og:title" content="Igor L. de Jesus — Senior Full Stack Developer">
+  <meta property="og:description" content="Portfólio de projetos escaláveis e modernos com Ruby on Rails, React e automações avançadas.">
+  <meta property="og:url" content="https://igordejesus.dev">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- Third-party Icons and Typed Effect Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
-<body class="min-h-screen bg-dark text-white">
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-dark bg-opacity-90 backdrop-filter backdrop-blur-lg border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="flex items-center">
-                    <span class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-magenta-500">IgorL.deJesus</span>
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-gray-300 hover:text-cyan-400 transition">Home</a>
-                    <a href="#about" class="text-gray-300 hover:text-cyan-400 transition">About</a>
-                    <a href="#skills" class="text-gray-300 hover:text-cyan-400 transition">Skills</a>
-                    <a href="#experience" class="text-gray-300 hover:text-cyan-400 transition">Experience</a>
-                    <a href="#projects" class="text-gray-300 hover:text-cyan-400 transition">Projects</a>
-                    <a href="#contact" class="text-gray-300 hover:text-cyan-400 transition">Contact</a>
-                </div>
-                <div class="md:hidden">
-                    <button id="menu-toggle" class="text-gray-300 hover:text-cyan-400 focus:outline-none">
-                        <i data-feather="menu"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-dark border-t border-gray-800">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#home" class="block px-3 py-2 text-gray-300 hover:text-cyan-400">Home</a>
-                <a href="#about" class="block px-3 py-2 text-gray-300 hover:text-cyan-400">About</a>
-                <a href="#skills" class="block px-3 py-2 text-gray-300 hover:text-cyan-400">Skills</a>
-                <a href="#experience" class="block px-3 py-2 text-gray-300 hover:text-cyan-400">Experience</a>
-                <a href="#projects" class="block px-3 py-2 text-gray-300 hover:text-cyan-400">Projects</a>
-                <a href="#contact" class="block px-3 py-2 text-gray-300 hover:text-cyan-400">Contact</a>
-            </div>
-        </div>
-    </nav>
+<body>
 
+  <!-- Reading progress bar indicator -->
+  <header class="header" id="header" role="banner">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="Igor L. de Jesus Portfólio Home">
+        <span class="logo-icon">&lt;</span>IgorL.deJesus<span class="logo-icon"> /&gt;</span>
+      </a>
+      
+      <nav role="navigation" aria-label="Navegação Principal">
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu de navegação">
+          <i data-feather="menu" aria-hidden="true"></i>
+        </button>
+        
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">Sobre</a></li>
+          <li><a href="#skills" class="nav-link">Habilidades</a></li>
+          <li><a href="#experience" class="nav-link">Experiência</a></li>
+          <li><a href="#projects" class="nav-link">Projetos</a></li>
+          <li><a href="#notes" class="nav-link">Pessoais</a></li>
+          <li><a href="#contact" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main role="main">
+    
     <!-- Hero Section -->
-    <section id="home" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-8" data-aos="fade-right">
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-magenta-500">Igor L. de Jesus</span>
-                </h1>
-                <h2 class="text-2xl sm:text-3xl text-gray-300">
-                    <span id="typed" class="text-cyan-400"></span>
-                </h2>
-                <p class="text-lg text-gray-400 max-w-lg">
-                    Building scalable web & mobile systems with Ruby on Rails, React and modern AI integrations.
-                </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#" class="px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-md font-medium hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
-                        Download Résumé (EN / PT)
-                    </a>
-                    <a href="#projects" class="px-6 py-3 border border-magenta-500 text-magenta-500 rounded-md font-medium hover:bg-magenta-500 hover:bg-opacity-10 hover:shadow-lg hover:shadow-magenta-500/20 transition-all duration-300">
-                        See Projects
-                    </a>
-                </div>
-                <p class="text-sm text-gray-500 italic">
-                    Available for remote & hybrid roles. First international opportunity.
-                </p>
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-tag">Disponível para Projetos</span>
+          <h1 class="hero-title">Igor L. de Jesus</h1>
+          <div class="hero-subtitle" aria-live="polite">
+            <span id="typed"></span>
+          </div>
+          <p class="hero-desc">
+            Desenvolvedor Full Stack Sênior focado na construção de sistemas web e mobile de alto desempenho, escalabilidade e integrações inteligentes de sistemas com Ruby on Rails, React e automações avançadas.
+          </p>
+          
+          <div class="hero-btns">
+            <a href="#projects" class="glow-btn glow-btn-primary">Ver Projetos</a>
+            <a href="#contact" class="glow-btn glow-btn-secondary">Entrar em Contato</a>
+          </div>
+          
+          <div class="hero-meta">
+            <div class="hero-meta-item">
+              <i data-feather="map-pin" aria-hidden="true"></i>
+              <span>Santo André - SP / Brasil</span>
             </div>
-            <div class="relative" data-aos="fade-left">
-                <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-magenta-500 rounded-xl opacity-20 blur-3xl"></div>
-                <div class="relative bg-dark rounded-xl neon-border p-4">
-                    <img src="http://static.photos/technology/640x360/42" alt="Code illustration" class="rounded-lg w-full h-auto">
-                </div>
+            <div class="hero-meta-item">
+              <i data-feather="globe" aria-hidden="true"></i>
+              <span>Projetos Globais & Remotos</span>
             </div>
+          </div>
         </div>
+        
+        <div class="hero-graphic">
+          <div class="hero-glow-sphere" aria-hidden="true"></div>
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <span class="hero-card-dot" aria-hidden="true"></span>
+              <span class="badge badge-primary">rails-react.js</span>
+            </div>
+            <div class="hero-card-code">
+              <span><span class="comment">// Minha essência profissional</span></span>
+              <span><span class="keyword">const</span> developer = {</span>
+              <span>  name: <span class="string">"Igor L. de Jesus"</span>,</span>
+              <span>  role: <span class="string">"Senior Full Stack"</span>,</span>
+              <span>  passions: [<span class="string">"Clean Architecture"</span>, <span class="string">"Automation"</span>],</span>
+              <span>  readyForChallenges: <span class="keyword">true</span></span>
+              <span>};</span>
+            </div>
+            <div class="hero-card-footer">
+              <span>LOC: 100k+</span>
+              <span>Status: Active</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="text-center mb-16" data-aos="fade-up">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-magenta-500">About Me</span>
-            </h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-cyan-500 to-magenta-500 mx-auto"></div>
+    <section id="about" class="section reveal-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Apresentação</span>
+          <h2 class="section-title">Sobre Mim</h2>
+          <div class="section-line" aria-hidden="true"></div>
         </div>
         
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div class="space-y-6" data-aos="fade-right">
-                <h3 class="text-2xl font-semibold text-cyan-400">Professional Summary (EN)</h3>
-                <p class="text-gray-400">
-                    Senior Full Stack Developer with extensive experience in building scalable web applications using Ruby on Rails and React. 
-                    Specialized in performance optimization, architectural decisions, and modern AI integrations. 
-                    Passionate about mentoring junior developers and implementing robust CI/CD pipelines.
-                </p>
-                <p class="text-gray-400">
-                    With a strong background in both frontend and backend development, I focus on creating efficient, maintainable systems 
-                    that deliver exceptional user experiences. My expertise includes cloud infrastructure, database optimization, 
-                    and implementing AI solutions using OpenAI API and HuggingFace models.
-                </p>
-            </div>
-            <div class="space-y-6" data-aos="fade-left">
-                <h3 class="text-2xl font-semibold text-magenta-500">Resumo Profissional (PT)</h3>
-                <p class="text-gray-400">
-                    Desenvolvedor Full Stack Sênior com vasta experiência em construção de aplicações web escaláveis usando Ruby on Rails e React.
-                    Especializado em otimização de performance, decisões arquiteturais e integrações com IA moderna.
-                    Apaixonado por mentorias e implementação de pipelines robustos de CI/CD.
-                </p>
-                <p class="text-gray-400">
-                    Com forte experiência em desenvolvimento frontend e backend, meu foco está em criar sistemas eficientes e 
-                    sustentáveis que entregam excelentes experiências de usuário. Minhas especialidades incluem infraestrutura em nuvem, 
-                    otimização de bancos de dados e implementação de soluções de IA.
-                </p>
-            </div>
+        <div class="about-grid">
+          <div class="about-column glass-card timeline-content">
+            <h3 class="about-subtitle"><i data-feather="user" aria-hidden="true"></i> Resumo Profissional (PT)</h3>
+            <p class="about-text">
+              Desenvolvedor Full Stack Sênior com vasta experiência no desenvolvimento de aplicações web escaláveis usando Ruby on Rails e React. Especialista em otimização de performance sob carga pesada, decisões de arquitetura e integrações com Inteligência Artificial moderna.
+            </p>
+            <p class="about-text">
+              Com forte atuação em cenários de alta complexidade (desenvolvimento full-cycle), possuo experiência profunda no design de APIs seguras, infraestrutura em nuvem, otimização de bancos de dados relacionais e automação completa de fluxos de atendimento (WhatsApp e Instagram).
+            </p>
+          </div>
+          
+          <div class="about-column glass-card timeline-content">
+            <h3 class="about-subtitle"><i data-feather="globe" aria-hidden="true"></i> Professional Summary (EN)</h3>
+            <p class="about-text">
+              Senior Full Stack Developer with extensive experience in building highly scalable, performant web applications using Ruby on Rails and React. Specialist in database query tuning, backend microservices, and AI tool integrations.
+            </p>
+            <p class="about-text">
+              Focused on delivering clean code, reliable test suites, and streamlined CI/CD pipelines. Experienced in managing modular cloud architectures, designing resilient queues, and automating complex client workflows through API setups.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto gradient-bg">
-        <div class="text-center mb-16" data-aos="fade-up">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-magenta-500">Technical Skills</span>
-            </h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-cyan-500 to-magenta-500 mx-auto"></div>
+    <section id="skills" class="section reveal-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competências</span>
+          <h2 class="section-title">Tecnologias & Skills</h2>
+          <div class="section-line" aria-hidden="true"></div>
         </div>
         
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4" data-aos="fade-up">
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="code" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">Ruby</p>
-            </div>
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="layers" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">Ruby on Rails</p>
-            </div>
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="react" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">React</p>
-            </div>
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="cpu" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">Rust</p>
-            </div>
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="smartphone" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">Flutter</p>
-            </div>
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="package" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">Docker</p>
-            </div>
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="server" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">Kubernetes</p>
-            </div>
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="cloud" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">AWS</p>
-            </div>
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="cloud" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">Azure</p>
-            </div>
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="database" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">PostgreSQL</p>
-            </div>
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="database" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">MongoDB</p>
-            </div>
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="database" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">Redis</p>
-            </div>
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="zap" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">Sidekiq</p>
-            </div>
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="cpu" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">OpenAI API</p>
-            </div>
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="cpu" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">HuggingFace</p>
-            </div>
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="cpu" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">LoRA</p>
-            </div>
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="git-merge" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">GitHub Actions</p>
-            </div>
-            <div class="skill-chip rounded-lg p-4 text-center hover-glow transition">
-                <i data-feather="refresh-cw" class="w-8 h-8 mx-auto text-cyan-400"></i>
-                <p class="mt-2 font-medium">CI/CD</p>
-            </div>
+        <div class="skills-grid">
+          <div class="glass-card skill-item">
+            <i data-feather="code" aria-hidden="true"></i>
+            <span class="skill-name">Ruby</span>
+          </div>
+          <div class="glass-card skill-item">
+            <i data-feather="layers" aria-hidden="true"></i>
+            <span class="skill-name">Ruby on Rails</span>
+          </div>
+          <div class="glass-card skill-item">
+            <i data-feather="monitor" aria-hidden="true"></i>
+            <span class="skill-name">React / Next.js</span>
+          </div>
+          <div class="glass-card skill-item">
+            <i data-feather="cpu" aria-hidden="true"></i>
+            <span class="skill-name">Rust</span>
+          </div>
+          <div class="glass-card skill-item">
+            <i data-feather="smartphone" aria-hidden="true"></i>
+            <span class="skill-name">Flutter / Mobile</span>
+          </div>
+          <div class="glass-card skill-item">
+            <i data-feather="database" aria-hidden="true"></i>
+            <span class="skill-name">PostgreSQL</span>
+          </div>
+          <div class="glass-card skill-item">
+            <i data-feather="zap" aria-hidden="true"></i>
+            <span class="skill-name">Redis & Sidekiq</span>
+          </div>
+          <div class="glass-card skill-item">
+            <i data-feather="server" aria-hidden="true"></i>
+            <span class="skill-name">Docker & K8s</span>
+          </div>
+          <div class="glass-card skill-item">
+            <i data-feather="cloud" aria-hidden="true"></i>
+            <span class="skill-name">AWS / Azure</span>
+          </div>
+          <div class="glass-card skill-item">
+            <i data-feather="git-branch" aria-hidden="true"></i>
+            <span class="skill-name">CI/CD & Git</span>
+          </div>
+          <div class="glass-card skill-item">
+            <i data-feather="message-circle" aria-hidden="true"></i>
+            <span class="skill-name">Bot Automations</span>
+          </div>
+          <div class="glass-card skill-item">
+            <i data-feather="shield" aria-hidden="true"></i>
+            <span class="skill-name">Offensive Security</span>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="text-center mb-16" data-aos="fade-up">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-magenta-500">Professional Experience</span>
-            </h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-cyan-500 to-magenta-500 mx-auto"></div>
+    <section id="experience" class="section reveal-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Carreira</span>
+          <h2 class="section-title">Experiência Profissional</h2>
+          <div class="section-line" aria-hidden="true"></div>
         </div>
         
-        <div class="relative pl-12 timeline">
-            <div class="mb-12 timeline-item" data-aos="fade-up">
-                <h3 class="text-xl font-bold text-cyan-400">Senior Full Stack Developer (PJ)</h3>
-                <div class="flex items-center text-gray-400 text-sm mb-2">
-                    <span>Priorize</span>
-                    <span class="mx-2">•</span>
-                    <span>06/2025 – Present</span>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Desenvolvedor Full Stack Sênior</h3>
+                  <div class="timeline-company">Priorize</div>
                 </div>
-                <ul class="list-disc list-inside text-gray-400 space-y-1">
-                    <li>Led architectural decisions for scalable web applications</li>
-                    <li>Implemented performance optimization strategies</li>
-                    <li>Mentored junior developers and conducted code reviews</li>
-                    <li>Integrated AI solutions using OpenAI API and HuggingFace</li>
-                </ul>
+                <span class="timeline-date">06/2025 – Presente</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Liderança na definição de decisões arquiteturais para sistemas altamente disponíveis.</li>
+                <li>Implementação de estratégias de otimização de performance e tuning de banco de dados.</li>
+                <li>Mentoria técnica a desenvolvedores juniores e condução de code reviews rigorosos.</li>
+                <li>Integração de fluxos complexos baseados em Inteligências Artificiais e modelos de linguagem.</li>
+              </ul>
             </div>
-            
-            <div class="mb-12 timeline-item" data-aos="fade-up">
-                <h3 class="text-xl font-bold text-magenta-500">Full Stack Developer (PJ)</h3>
-                <div class="flex items-center text-gray-400 text-sm mb-2">
-                    <span>Appgas</span>
-                    <span class="mx-2">•</span>
-                    <span>05/2023 – 06/2025</span>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Desenvolvedor Full Stack Sênior</h3>
+                  <div class="timeline-company">Appgas</div>
                 </div>
-                <ul class="list-disc list-inside text-gray-400 space-y-1">
-                    <li>Developed and maintained Ruby on Rails applications</li>
-                    <li>Built responsive React frontends with modern UI/UX</li>
-                    <li>Optimized database queries and background jobs</li>
-                    <li>Implemented CI/CD pipelines with GitHub Actions</li>
-                </ul>
+                <span class="timeline-date">05/2023 – 06/2025</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Desenvolvimento e manutenção evolutiva do ecossistema completo de venda e distribuição de gás.</li>
+                <li>Construção e sustentação do App, Admin e Revenda utilizando Ruby on Rails e React.</li>
+                <li>Otimização de processos críticos em background (Sidekiq) e consultas complexas no PostgreSQL.</li>
+                <li>Manutenção e criação de pipelines eficientes de integração contínua (GitHub Actions).</li>
+              </ul>
             </div>
-            
-            <div class="mb-12 timeline-item" data-aos="fade-up">
-                <h3 class="text-xl font-bold text-cyan-400">Full Stack Developer (PJ)</h3>
-                <div class="flex items-center text-gray-400 text-sm mb-2">
-                    <span>Priorize</span>
-                    <span class="mx-2">•</span>
-                    <span>01/2022 – 01/2023</span>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Desenvolvedor Full Stack</h3>
+                  <div class="timeline-company">Priorize</div>
                 </div>
-                <ul class="list-disc list-inside text-gray-400 space-y-1">
-                    <li>Contributed to full-stack development projects</li>
-                    <li>Worked on API design and microservices architecture</li>
-                    <li>Improved application performance and scalability</li>
-                    <li>Collaborated with cross-functional teams</li>
-                </ul>
+                <span class="timeline-date">01/2022 – 01/2023</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Desenvolvimento de novas funcionalidades full-stack ponta a ponta com Rails e React.</li>
+                <li>Modelagem e design de APIs RESTful integradas e documentadas de alta performance.</li>
+                <li>Melhoria nos índices de usabilidade de componentes web focados no usuário.</li>
+              </ul>
             </div>
-            
-            <div class="mb-12 timeline-item" data-aos="fade-up">
-                <h3 class="text-xl font-bold text-magenta-500">Front End Developer (PJ)</h3>
-                <div class="flex items-center text-gray-400 text-sm mb-2">
-                    <span>Mobitype + Priorize</span>
-                    <span class="mx-2">•</span>
-                    <span>09/2021 – 01/2022</span>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Desenvolvedor Front End</h3>
+                  <div class="timeline-company">Mobitype + Priorize</div>
                 </div>
-                <ul class="list-disc list-inside text-gray-400 space-y-1">
-                    <li>Developed responsive web interfaces with React</li>
-                    <li>Implemented UI/UX best practices</li>
-                    <li>Worked closely with designers and backend developers</li>
-                </ul>
+                <span class="timeline-date">09/2021 – 01/2022</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Desenvolvimento de layouts responsivos fiéis ao design com React e pré-processadores.</li>
+                <li>Foco em otimização de tempo de carregamento e compatibilidade entre navegadores modernos.</li>
+                <li>Colaboração direta com times de design de interface (UI/UX).</li>
+              </ul>
             </div>
-            
-            <div class="timeline-item" data-aos="fade-up">
-                <h3 class="text-xl font-bold text-cyan-400">Freelancer</h3>
-                <div class="flex items-center text-gray-400 text-sm mb-2">
-                    <span>WordPress Developer</span>
-                    <span class="mx-2">•</span>
-                    <span>10/2019 – 12/2021</span>
-                </div>
-                <ul class="list-disc list-inside text-gray-400 space-y-1">
-                    <li>Built custom WordPress themes and plugins</li>
-                    <li>Provided website maintenance and support</li>
-                    <li>Worked with various clients across industries</li>
-                </ul>
-            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto gradient-bg">
-        <div class="text-center mb-16" data-aos="fade-up">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-magenta-500">Featured Projects</span>
-            </h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-cyan-500 to-magenta-500 mx-auto"></div>
+    <section id="projects" class="section reveal-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfólio</span>
+          <h2 class="section-title">Projetos Profissionais</h2>
+          <div class="section-line" aria-hidden="true"></div>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="project-card rounded-xl p-6 transition-all duration-300" data-aos="fade-up">
-                <div class="mb-4">
-                    <img src="http://static.photos/technology/640x360/1" alt="Project 1" class="rounded-lg w-full h-48 object-cover">
-                </div>
-                <h3 class="text-xl font-bold text-cyan-400 mb-2">Rails API Microservice</h3>
-                <p class="text-gray-400 mb-4">A scalable microservice architecture built with Ruby on Rails, handling high-volume transactions.</p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="text-xs px-2 py-1 bg-gray-800 rounded-full text-cyan-400">Ruby on Rails</span>
-                    <span class="text-xs px-2 py-1 bg-gray-800 rounded-full text-cyan-400">PostgreSQL</span>
-                    <span class="text-xs px-2 py-1 bg-gray-800 rounded-full text-cyan-400">Redis</span>
-                </div>
-                <a href="https://github.com/JesusGautamah/rails-microservice" class="text-magenta-500 hover:text-magenta-400 flex items-center">
-                    <i data-feather="github" class="w-4 h-4 mr-2"></i> View on GitHub
-                </a>
+        <div class="projects-grid">
+          
+          <!-- Appgas Ecosystem -->
+          <article class="glass-card project-card">
+            <div class="project-card-banner">
+              <div class="project-card-icon" aria-hidden="true">
+                <i data-feather="server"></i>
+              </div>
             </div>
-            
-            <div class="project-card rounded-xl p-6 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
-                <div class="mb-4">
-                    <img src="http://static.photos/technology/640x360/2" alt="Project 2" class="rounded-lg w-full h-48 object-cover">
+            <div class="project-card-body">
+              <h3 class="project-card-title">
+                Ecossistema Appgas
+                <span class="project-card-status">Produção</span>
+              </h3>
+              <p class="project-card-desc">
+                Estruturação de toda a arquitetura de canais digitais para distribuição de gás de cozinha, abrangendo quatro plataformas interconectadas voltadas para diferentes perfis de usuários.
+              </p>
+              
+              <div class="ecosystem-list">
+                <div class="ecosystem-item">
+                  <span class="ecosystem-name">appgas.com</span>
+                  <a href="https://appgas.com" target="_blank" rel="noopener noreferrer" class="ecosystem-link">
+                    Portal Institucional <i data-feather="external-link" aria-hidden="true"></i>
+                  </a>
                 </div>
-                <h3 class="text-xl font-bold text-magenta-500 mb-2">React AI Dashboard</h3>
-                <p class="text-gray-400 mb-4">Interactive dashboard integrating OpenAI API with React, visualizing AI model outputs.</p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="text-xs px-2 py-1 bg-gray-800 rounded-full text-magenta-500">React</span>
-                    <span class="text-xs px-2 py-1 bg-gray-800 rounded-full text-magenta-500">OpenAI API</span>
-                    <span class="text-xs px-2 py-1 bg-gray-800 rounded-full text-magenta-500">Chart.js</span>
+                <div class="ecosystem-item">
+                  <span class="ecosystem-name">app.appgas.com</span>
+                  <a href="https://app.appgas.com" target="_blank" rel="noopener noreferrer" class="ecosystem-link">
+                    App do Cliente <i data-feather="external-link" aria-hidden="true"></i>
+                  </a>
                 </div>
-                <a href="https://github.com/JesusGautamah/react-ai-dashboard" class="text-cyan-400 hover:text-cyan-300 flex items-center">
-                    <i data-feather="github" class="w-4 h-4 mr-2"></i> View on GitHub
-                </a>
+                <div class="ecosystem-item">
+                  <span class="ecosystem-name">admin.appgas.com</span>
+                  <a href="https://admin.appgas.com" target="_blank" rel="noopener noreferrer" class="ecosystem-link">
+                    Painel Administrativo <i data-feather="external-link" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <div class="ecosystem-item">
+                  <span class="ecosystem-name">revenda.appgas.com</span>
+                  <a href="https://revenda.appgas.com" target="_blank" rel="noopener noreferrer" class="ecosystem-link">
+                    Portal de Revendas <i data-feather="external-link" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="project-card-tags">
+                <span class="badge">Ruby on Rails</span>
+                <span class="badge">React</span>
+                <span class="badge">PostgreSQL</span>
+                <span class="badge">Redis / Sidekiq</span>
+              </div>
             </div>
-            
-            <div class="project-card rounded-xl p-6 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
-                <div class="mb-4">
-                    <img src="http://static.photos/technology/640x360/3" alt="Project 3" class="rounded-lg w-full h-48 object-cover">
-                </div>
-                <h3 class="text-xl font-bold text-cyan-400 mb-2">E-commerce Gem</h3>
-                <p class="text-gray-400 mb-4">A Ruby gem providing e-commerce functionality for Rails applications.</p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="text-xs px-2 py-1 bg-gray-800 rounded-full text-cyan-400">Ruby</span>
-                    <span class="text-xs px-2 py-1 bg-gray-800 rounded-full text-cyan-400">Rails Engine</span>
-                    <span class="text-xs px-2 py-1 bg-gray-800 rounded-full text-cyan-400">Stripe API</span>
-                </div>
-                <a href="https://rubygems.org/gems/ecommerce_core" class="text-magenta-500 hover:text-magenta-400 flex items-center">
-                    <i data-feather="package" class="w-4 h-4 mr-2"></i> View on RubyGems
-                </a>
+          </article>
+
+          <!-- Priorize.org -->
+          <article class="glass-card project-card">
+            <div class="project-card-banner">
+              <div class="project-card-icon" aria-hidden="true">
+                <i data-feather="users"></i>
+              </div>
             </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">
+                Priorize.org
+                <span class="project-card-status">Produção</span>
+              </h3>
+              <p class="project-card-desc">
+                Rede social inovadora com foco governamental e empresarial projetada para votação e deliberação de propostas em comunidades locais. Permite que gestores e cidadãos criem enquetes seguras, discutam necessidades prioritárias e impulsionem a tomada de decisão democrática baseada em dados reais.
+              </p>
+              <div class="project-card-tags">
+                <span class="badge">Ruby on Rails</span>
+                <span class="badge">React</span>
+                <span class="badge">Social Network</span>
+                <span class="badge">E-Democracy</span>
+              </div>
+              <div class="project-card-links">
+                <a href="https://priorize.org" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i data-feather="external-link" aria-hidden="true"></i> Acessar Priorize
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Cinnamon Run Club -->
+          <article class="glass-card project-card">
+            <div class="project-card-banner">
+              <div class="project-card-icon" aria-hidden="true">
+                <i data-feather="message-square"></i>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">
+                Cinnamon Run Club
+                <span class="project-card-status">Produção</span>
+              </h3>
+              <p class="project-card-desc">
+                Desenvolvimento exclusivo do sistema de automação e integração de mensageria para a Cinnamon Run Club. Solução focada na construção de bots integrados no WhatsApp e Instagram API para autoatendimento automatizado de clientes, reduzindo o tempo de resposta do clube esportivo.
+              </p>
+              <div class="project-card-tags">
+                <span class="badge">Automations</span>
+                <span class="badge">WhatsApp API</span>
+                <span class="badge">Instagram Webhook</span>
+                <span class="badge">Node.js</span>
+              </div>
+              <div class="project-card-links">
+                <a href="https://cinnamonrun.club" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i data-feather="external-link" aria-hidden="true"></i> Visitar Site
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Fasttask.com.br -->
+          <article class="glass-card project-card">
+            <div class="project-card-banner">
+              <div class="project-card-icon" aria-hidden="true">
+                <i data-feather="check-square"></i>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">
+                Fasttask.com.br
+                <span class="project-card-status">Produção</span>
+              </h3>
+              <p class="project-card-desc">
+                Plataforma web ágil com foco na gestão corporativa de tarefas e acompanhamento de entregas de equipes. Desenvolvida para suprir necessidades de alta performance e rapidez no gerenciamento de demandas operacionais diárias em médias e grandes corporações.
+              </p>
+              <div class="project-card-tags">
+                <span class="badge">Productivity</span>
+                <span class="badge">React</span>
+                <span class="badge">Ruby on Rails</span>
+                <span class="badge">REST API</span>
+              </div>
+              <div class="project-card-links">
+                <a href="https://fasttask.com.br" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i data-feather="external-link" aria-hidden="true"></i> Acessar Fasttask
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Noblex Contabilidade -->
+          <article class="glass-card project-card">
+            <div class="project-card-banner">
+              <div class="project-card-icon" aria-hidden="true">
+                <i data-feather="trending-up"></i>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">
+                Noblex Contabilidade
+                <span class="project-card-status dev">Em Desenvolvimento</span>
+              </h3>
+              <p class="project-card-desc">
+                Nova plataforma de contabilidade inteligente voltada para facilitar os processos contábeis e fiscais de prestadores de serviços e empresas em crescimento. Painel limpo, controle dinâmico de notas fiscais e interface intuitiva para o gerenciamento de balanços e obrigações.
+              </p>
+              <div class="project-card-tags">
+                <span class="badge">Accounting</span>
+                <span class="badge">Next.js / Vercel</span>
+                <span class="badge">CSS Variables</span>
+                <span class="badge">Responsive Design</span>
+              </div>
+              <div class="project-card-links">
+                <a href="https://noblex-contabilidade.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i data-feather="external-link" aria-hidden="true"></i> Acessar Preview <span style="font-size: 0.75rem; font-weight: normal;">(Vercel)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+          
         </div>
-        
-        <div class="text-center mt-12" data-aos="fade-up">
-            <a href="https://github.com/JesusGautamah" class="inline-flex items-center px-6 py-3 border border-cyan-400 text-cyan-400 rounded-md font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
-                <i data-feather="github" class="w-5 h-5 mr-2"></i> View All Projects on GitHub
-            </a>
-        </div>
+      </div>
     </section>
 
-    <!-- Interview Kit / Media Section -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="text-center mb-16" data-aos="fade-up">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-magenta-500">Personal Notes</span>
-            </h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-cyan-500 to-magenta-500 mx-auto"></div>
+    <!-- Personal Notes Section -->
+    <section id="notes" class="section reveal-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Notas Pessoais</span>
+          <h2 class="section-title">Objetivos & Vida</h2>
+          <div class="section-line" aria-hidden="true"></div>
         </div>
         
-        <div class="max-w-3xl mx-auto space-y-8" data-aos="fade-up">
-            <div>
-                <h3 class="text-xl font-semibold text-cyan-400 mb-2">Self Introduction</h3>
-                <p class="text-gray-400">
-                    I'm a passionate developer who thrives on solving complex problems and building systems that make a difference. 
-                    With a strong foundation in both frontend and backend technologies, I bring a holistic approach to software development.
-                </p>
-            </div>
-            
-            <div>
-                <h3 class="text-xl font-semibold text-magenta-500 mb-2">Motivation</h3>
-                <p class="text-gray-400">
-                    Recently married (December 11) and expecting to become a father in April, I'm more motivated than ever to build 
-                    a stable future for my growing family. These life events have given me renewed focus and drive in my professional work.
-                </p>
-            </div>
-            
-            <div>
-                <h3 class="text-xl font-semibold text-cyan-400 mb-2">First International Opportunity</h3>
-                <p class="text-gray-400">
-                    I'm actively seeking my first international work opportunity to expand my professional horizons and bring my expertise 
-                    to a global audience. With experience in remote collaboration and a flexible schedule, I'm ready to contribute to teams worldwide.
-                </p>
-            </div>
+        <div class="notes-container">
+          <div class="glass-card notes-card">
+            <h3 class="notes-title"><i data-feather="heart" aria-hidden="true"></i> Família & Motivação</h3>
+            <p>
+              Recentemente casado (11 de Dezembro) e vivendo a jornada emocionante de ser pai (nascimento em Abril). Estes acontecimentos reforçaram significativamente meu foco, profissionalismo e determinação em entregar softwares com alto padrão de qualidade e confiabilidade.
+            </p>
+          </div>
+          
+          <div class="glass-card notes-card">
+            <h3 class="notes-title"><i data-feather="award" aria-hidden="true"></i> Busca pela Primeira Oportunidade Internacional</h3>
+            <p>
+              Com sólida bagagem técnica e capacidade de trabalhar em fusos horários flexíveis, estou ativamente em busca da minha primeira posição remota internacional. Foco no aperfeiçoamento contínuo da arquitetura de sistemas e metodologias de desenvolvimento ágil.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto gradient-bg">
-        <div class="text-center mb-16" data-aos="fade-up">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-magenta-500">Get In Touch</span>
-            </h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-cyan-500 to-magenta-500 mx-auto"></div>
+    <section id="contact" class="section reveal-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Contato</span>
+          <h2 class="section-title">Vamos Conversar?</h2>
+          <div class="section-line" aria-hidden="true"></div>
         </div>
         
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div class="space-y-6" data-aos="fade-right">
-                <h3 class="text-2xl font-semibold text-cyan-400">Contact Information</h3>
-                <div class="space-y-4">
-                    <div class="flex items-start">
-                        <i data-feather="map-pin" class="w-5 h-5 mt-1 mr-4 text-magenta-500"></i>
-                        <div>
-                            <h4 class="font-medium">Location</h4>
-                            <p class="text-gray-400">Santo André – SP / Brazil</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <i data-feather="phone" class="w-5 h-5 mt-1 mr-4 text-magenta-500"></i>
-                        <div>
-                            <h4 class="font-medium">Phone</h4>
-                            <p class="text-gray-400">+55 (11) 97018-8441</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <i data-feather="mail" class="w-5 h-5 mt-1 mr-4 text-magenta-500"></i>
-                        <div>
-                            <h4 class="font-medium">Email</h4>
-                            <p class="text-gray-400">lima.jesuscc@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <i data-feather="github" class="w-5 h-5 mt-1 mr-4 text-magenta-500"></i>
-                        <div>
-                            <h4 class="font-medium">GitHub</h4>
-                            <div class="flex flex-wrap gap-4">
-                                <a href="https://github.com/JesusGautamah" class="text-cyan-400 hover:text-cyan-300">Personal</a>
-                                <a href="https://github.com/IgorLimaJesus" class="text-cyan-400 hover:text-cyan-300">Professional</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <i data-feather="package" class="w-5 h-5 mt-1 mr-4 text-magenta-500"></i>
-                        <div>
-                            <h4 class="font-medium">RubyGems</h4>
-                            <a href="https://rubygems.org/profiles/jesus_gautamah" class="text-cyan-400 hover:text-cyan-300">My Published Gems</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3 class="contact-title">Informações de Contato</h3>
             
-            <div data-aos="fade-left">
-                <form id="contact-form" class="space-y-6">
-                    <input type="hidden" name="honeypot" id="honeypot" value="">
-                    <div>
-                        <label for="name" class="block text-sm font-medium mb-1">Name</label>
-                        <input type="text" id="name" name="name" required class="w-full px-4 py-2 rounded-md focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium mb-1">Email</label>
-                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 rounded-md focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
-                    </div>
-                    <div>
-                        <label for="message" class="block text-sm font-medium mb-1">Message</label>
-                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 rounded-md focus:ring-2 focus:ring-cyan-500 focus:border-transparent"></textarea>
-                    </div>
-                    <div class="pt-2">
-                        <button type="submit" class="px-6 py-3 bg-gradient-to-r from-cyan-500 to-magenta-500 rounded-md font-medium hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 w-full">
-                            Send Message
-                        </button>
-                    </div>
-                    <p class="text-xs text-gray-500">
-                        Your information will only be used to respond to your inquiry. I'll never share your details with third parties.
-                    </p>
-                </form>
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <i data-feather="mail"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>E-mail</h4>
+                  <a href="mailto:lima.jesuscc@gmail.com" aria-label="Enviar email para lima.jesuscc@gmail.com">lima.jesuscc@gmail.com</a>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <i data-feather="phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Telefone / WhatsApp</h4>
+                  <a href="https://wa.me/5511970188441" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">+55 (11) 97018-8441</a>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <i data-feather="github"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Perfis no GitHub</h4>
+                  <div class="contact-social-links">
+                    <a href="https://github.com/IgorLimaJesus" target="_blank" rel="noopener noreferrer">Profissional</a>
+                    <a href="https://github.com/JesusGautamah" target="_blank" rel="noopener noreferrer">Pessoal</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <i data-feather="package"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>RubyGems</h4>
+                  <a href="https://rubygems.org/profiles/jesus_gautamah" target="_blank" rel="noopener noreferrer" aria-label="Acessar RubyGems de Igor">jesus_gautamah</a>
+                </div>
+              </div>
             </div>
+          </div>
+          
+          <div class="glass-card timeline-content">
+            <form id="contact-form" class="contact-form" action="#" method="POST">
+              <!-- Honeypot anti-spam protection -->
+              <input type="text" name="b_name" id="b_name" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+              
+              <div class="form-group">
+                <label for="form-name">Nome</label>
+                <input type="text" id="form-name" name="name" required class="form-input" placeholder="Seu nome completo">
+              </div>
+              
+              <div class="form-group">
+                <label for="form-email">E-mail</label>
+                <input type="email" id="form-email" name="email" required class="form-input" placeholder="seu@email.com">
+              </div>
+              
+              <div class="form-group">
+                <label for="form-message">Mensagem</label>
+                <textarea id="form-message" name="message" required class="form-input form-input-textarea" placeholder="Olá Igor, gostaria de conversar sobre..."></textarea>
+              </div>
+              
+              <button type="submit" class="glow-btn glow-btn-primary" style="width: 100%;">Enviar Mensagem</button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <span class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-magenta-500">Igor L. de Jesus</span>
-                    <p class="text-gray-500 mt-2">Senior Full Stack Developer</p>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="https://github.com/JesusGautamah" class="text-gray-400 hover:text-cyan-400 transition">
-                        <i data-feather="github"></i>
-                    </a>
-                    <a href="https://rubygems.org/profiles/jesus_gautamah" class="text-gray-400 hover:text-magenta-500 transition">
-                        <i data-feather="package"></i>
-                    </a>
-                    <a href="mailto:lima.jesuscc@gmail.com" class="text-gray-400 hover:text-cyan-400 transition">
-                        <i data-feather="mail"></i>
-                    </a>
-                    <a href="tel:+5511970188441" class="text-gray-400 hover:text-magenta-500 transition">
-                        <i data-feather="phone"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-sm">© <span id="year"></span> Igor L. de Jesus. All rights reserved.</p>
-                <a href="#" class="text-sm text-cyan-400 hover:text-cyan-300 mt-4 md:mt-0">Download Résumé (EN / PT)</a>
-            </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-info">
+          <h3>Igor L. de Jesus</h3>
+          <p>Senior Full Stack Developer</p>
         </div>
-    </footer>
+        
+        <div class="footer-socials">
+          <a href="https://github.com/IgorLimaJesus" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="GitHub Profissional">
+            <i data-feather="github" aria-hidden="true"></i>
+          </a>
+          <a href="https://rubygems.org/profiles/jesus_gautamah" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="RubyGems">
+            <i data-feather="package" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:lima.jesuscc@gmail.com" class="footer-social-btn" aria-label="Enviar E-mail">
+            <i data-feather="mail" aria-hidden="true"></i>
+          </a>
+          <a href="https://wa.me/5511970188441" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Conversar no WhatsApp">
+            <i data-feather="message-circle" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="current-year"></span> Igor L. de Jesus. Todos os direitos reservados.
+        </p>
+        <a href="#home" class="footer-link">Voltar ao topo</a>
+      </div>
+    </div>
+  </footer>
 
-    <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true
+  <!-- Page Interactivity Scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Initialize Feather Icons
+      feather.replace();
+
+      // 2. Set Current Year in Footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+
+      // 3. Mobile Menu Toggle
+      const menuToggle = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
+
+      menuToggle.addEventListener('click', () => {
+        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', !isExpanded);
+        navLinks.classList.toggle('active');
+      });
+
+      // Close mobile menu when clicking outside or on a link
+      document.addEventListener('click', (e) => {
+        if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+          menuToggle.setAttribute('aria-expanded', 'false');
+          navLinks.classList.remove('active');
+        }
+      });
+      
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          menuToggle.setAttribute('aria-expanded', 'false');
+          navLinks.classList.remove('active');
         });
+      });
 
-        // Initialize feather icons
-        feather.replace();
+      // 4. Typing Animation (Typed.js)
+      new Typed('#typed', {
+        strings: [
+          'Senior Full Stack Developer',
+          'Especialista em Ruby on Rails',
+          'Desenvolvedor React / Next.js',
+          'Expert em Automações e Integrações'
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 1500,
+        loop: true,
+        showCursor: true,
+        cursorChar: '|'
+      });
 
-        // Set current year in footer
-        document.getElementById('year').textContent = new Date().getFullYear();
+      // 5. Scroll Progress Bar & Header Shadow
+      const scrollProgress = document.getElementById('scroll-progress');
+      const header = document.getElementById('header');
 
-        // Typed.js initialization
-        document.addEventListener('DOMContentLoaded', function() {
-            var typed = new Typed('#typed', {
-                strings: ['Senior Full Stack Developer', 'Ruby on Rails Expert', 'React Specialist', 'AI Integration Developer'],
-                typeSpeed: 50,
-                backSpeed: 30,
-                loop: true,
-                showCursor: true,
-                cursorChar: '|',
-                smartBackspace: true
-            });
-        });
+      window.addEventListener('scroll', () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        
+        scrollProgress.style.width = scrolled + '%';
 
-        // Mobile menu toggle
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
+        if (winScroll > 20) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
 
-        // Contact form submission
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Simple honeypot check
-            if (document.getElementById('honeypot').value !== '') {
-                return;
+      // 6. Progressive Enhancement: Reveal on scroll for browsers without native view timelines
+      if (!CSS.supports('(animation-timeline: view()) and (animation-range: entry)')) {
+        const revealElements = document.querySelectorAll('.reveal-on-scroll');
+        
+        const observerOptions = {
+          root: null,
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = '1';
+              entry.target.style.transform = 'translateY(0) scale(1)';
+              entry.target.style.transition = 'opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+              observer.unobserve(entry.target);
             }
-            
-            // Get form data
-            const formData = new FormData(this);
-            
-            // Here you would normally send the form data to your server
-            // For this example, we'll just log it and show an alert
-            const formValues = Object.fromEntries(formData.entries());
-            console.log('Form submitted:', formValues);
-            
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
-        });
+          });
+        }, observerOptions);
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    document.getElementById('mobile-menu').classList.add('hidden');
-                }
-            });
+        revealElements.forEach(el => {
+          // Set initial styles for fallback browsers
+          el.style.opacity = '0';
+          el.style.transform = 'translateY(30px) scale(0.97)';
+          observer.observe(el);
         });
-    </script>
+      }
+
+      // 7. Contact Form Handling
+      const contactForm = document.getElementById('contact-form');
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Spam prevention check (honeypot)
+        const honeypot = document.getElementById('b_name').value;
+        if (honeypot) return;
+
+        const name = document.getElementById('form-name').value;
+        const email = document.getElementById('form-email').value;
+        const message = document.getElementById('form-message').value;
+
+        // Visual success state
+        alert(`Obrigado pelo contato, ${name}! Em breve retornarei no e-mail: ${email}.`);
+        contactForm.reset();
+      });
+    });
+  </script>
 </body>
 </html>
