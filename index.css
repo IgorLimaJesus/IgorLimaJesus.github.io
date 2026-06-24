@@ -125,7 +125,12 @@ a {
   justify-content: center;
   color: var(--text-muted);
   animation: bounce-arrow 2s infinite;
-  pointer-events: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.scroll-indicator:hover {
+  color: var(--color-primary);
 }
 
 .scroll-indicator i {
