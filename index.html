@@ -3,613 +3,360 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Igor L. de Jesus — Senior Full Stack Developer (Rails & React)</title>
+  <title>Igor L. de Jesus — Senior Full Stack Developer</title>
   
-  <!-- SEO & Social Meta Tags -->
   <meta name="description" content="Desenvolvedor Full Stack Sênior especializado em Ruby on Rails, React e automações inteligentes. Portfólio profissional de projetos e experiências.">
-  <meta name="keywords" content="Igor Lima de Jesus, Ruby on Rails, React, Senior Developer, Appgas, Priorize, Cinnamon Run Club, Noblex Contabilidade, Fasttask, Web Development, Full Stack">
   <meta name="author" content="Igor L. de Jesus">
   
-  <meta property="og:title" content="Igor L. de Jesus — Senior Full Stack Developer">
-  <meta property="og:description" content="Portfólio de projetos escaláveis e modernos com Ruby on Rails, React e automações avançadas.">
-  <meta property="og:url" content="https://igordejesus.dev">
-  <meta property="og:type" content="website">
-  
-  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  
-  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="index.css">
   
-  <!-- Third-party Icons and Typed Effect Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
 
-  <!-- Reading progress bar indicator -->
-  <header class="header" id="header" role="banner">
-    <div class="container nav-container">
-      <a href="#home" class="logo" aria-label="Igor L. de Jesus Portfólio Home">
-        <span class="logo-icon">&lt;</span>IgorL.deJesus<span class="logo-icon"> /&gt;</span>
-      </a>
-      
-      <nav role="navigation" aria-label="Navegação Principal">
-        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu de navegação">
-          <i data-feather="menu" aria-hidden="true"></i>
-        </button>
-        
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">Sobre</a></li>
-          <li><a href="#skills" class="nav-link">Habilidades</a></li>
-          <li><a href="#experience" class="nav-link">Experiência</a></li>
-          <li><a href="#projects" class="nav-link">Projetos</a></li>
-          <li><a href="#notes" class="nav-link">Empresas</a></li>
-          <li><a href="#contact" class="nav-link">Contato</a></li>
-        </ul>
-      </nav>
+  <!-- Mobile Header -->
+  <header class="mobile-header glass-panel">
+    <div class="brand-title">
+      <div class="brand-dot"></div>
+      Igor L. de Jesus
     </div>
-    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+    <button class="menu-toggle" id="menu-toggle">
+      <i data-feather="menu"></i>
+    </button>
   </header>
 
-  <main role="main">
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar glass-panel" id="sidebar">
+    <div class="brand">
+      <div class="brand-title">
+        <div class="brand-dot"></div>
+        Igor L. de Jesus
+      </div>
+    </div>
+    
+    <nav>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#home" class="active"><i data-feather="home"></i> Home</a></li>
+        <li class="nav-item"><a href="#about"><i data-feather="user"></i> Sobre</a></li>
+        <li class="nav-item"><a href="#skills"><i data-feather="cpu"></i> Skills</a></li>
+        <li class="nav-item"><a href="#experience"><i data-feather="briefcase"></i> Experiência</a></li>
+        <li class="nav-item"><a href="#projects"><i data-feather="grid"></i> Projetos</a></li>
+        <li class="nav-item"><a href="#notes"><i data-feather="file-text"></i> Empresas</a></li>
+        <li class="nav-item"><a href="#contact"><i data-feather="mail"></i> Contato</a></li>
+      </ul>
+    </nav>
+    
+    <div class="social-links">
+      <a href="https://github.com/IgorLimaJesus" target="_blank" aria-label="GitHub"><i data-feather="github"></i></a>
+      <a href="https://rubygems.org/profiles/jesus_gautamah" target="_blank" aria-label="RubyGems"><i data-feather="package"></i></a>
+      <a href="https://wa.me/5511970188441" target="_blank" aria-label="WhatsApp"><i data-feather="message-circle"></i></a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
     
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <span class="hero-tag">Disponível para Projetos</span>
-          <h1 class="hero-title">Igor L. de Jesus</h1>
-          <div class="hero-subtitle" aria-live="polite">
-            <span id="typed"></span>
-          </div>
-          <p class="hero-desc">
-            Desenvolvedor Full Stack Sênior focado na construção de sistemas web e mobile de alto desempenho, escalabilidade e integrações inteligentes de sistemas com Ruby on Rails, React e automações avançadas.
-          </p>
-          
-          <div class="hero-btns">
-            <a href="#projects" class="glow-btn glow-btn-primary">Ver Projetos</a>
-            <a href="#contact" class="glow-btn glow-btn-secondary">Entrar em Contato</a>
-          </div>
-          
-          <div class="hero-meta">
-            <div class="hero-meta-item">
-              <i data-feather="map-pin" aria-hidden="true"></i>
-              <span>Santo André - SP / Brasil</span>
-            </div>
-            <div class="hero-meta-item">
-              <i data-feather="globe" aria-hidden="true"></i>
-              <span>Projetos Globais & Remotos</span>
-            </div>
-          </div>
-        </div>
+    <section id="home" class="hero reveal active">
+      <div class="hero-blob"></div>
+      <div class="hero-content">
+        <div class="section-subtitle">Disponível para Projetos</div>
+        <h1>Construindo Sistemas<br>Escaláveis e Premium.</h1>
+        <p>Desenvolvedor Full Stack Sênior focado na construção de sistemas web e mobile de alto desempenho com Ruby on Rails, React e automações avançadas.</p>
         
-        <div class="hero-graphic">
-          <div class="hero-glow-sphere" aria-hidden="true"></div>
-          <div class="hero-card">
-            <div class="hero-card-header">
-              <span class="hero-card-dot" aria-hidden="true"></span>
-              <span class="badge badge-primary">rails-react.js</span>
-            </div>
-            <div class="hero-card-code">
-              <span><span class="comment">// Minha essência profissional</span></span>
-              <span><span class="keyword">const</span> developer = {</span>
-              <span>  name: <span class="string">"Igor L. de Jesus"</span>,</span>
-              <span>  role: <span class="string">"Senior Full Stack"</span>,</span>
-              <span>  passions: [<span class="string">"Clean Architecture"</span>, <span class="string">"Automation"</span>],</span>
-              <span>  readyForChallenges: <span class="keyword">true</span></span>
-              <span>};</span>
-            </div>
-            <div class="hero-card-footer">
-              <span>LOC: 100k+</span>
-              <span>Status: Active</span>
-            </div>
-          </div>
-        </div>
+        <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary"><i data-feather="mail"></i> Fale Comigo</a>
+        <a href="#projects" class="btn btn-secondary"><i data-feather="grid"></i> Ver Portfólio</a>
+      </div>
+      
+      <div class="scroll-indicator">
+        <i data-feather="chevron-down"></i>
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section reveal-on-scroll">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Apresentação</span>
-          <h2 class="section-title">Sobre Mim</h2>
-          <div class="section-line" aria-hidden="true"></div>
-        </div>
-        
-        <div class="about-grid">
-          <div class="about-column glass-card timeline-content">
-            <h3 class="about-subtitle"><i data-feather="user" aria-hidden="true"></i> Resumo Profissional (PT)</h3>
-            <p class="about-text">
-              Desenvolvedor Full Stack Sênior com vasta experiência no desenvolvimento de aplicações web escaláveis usando Ruby on Rails e React. Especialista em otimização de performance sob carga pesada, decisões de arquitetura e integrações com Inteligência Artificial moderna.
-            </p>
-            <p class="about-text">
-              Com forte atuação em cenários de alta complexidade (desenvolvimento full-cycle), possuo experiência profunda no design de APIs seguras, infraestrutura em nuvem, otimização de bancos de dados relacionais e automação completa de fluxos de atendimento (WhatsApp e Instagram).
-            </p>
-          </div>
-          
-          <div class="about-column glass-card timeline-content">
-            <h3 class="about-subtitle"><i data-feather="globe" aria-hidden="true"></i> Professional Summary (EN)</h3>
-            <p class="about-text">
-              Senior Full Stack Developer with extensive experience in building highly scalable, performant web applications using Ruby on Rails and React. Specialist in database query tuning, backend microservices, and AI tool integrations.
-            </p>
-            <p class="about-text">
-              Focused on delivering clean code, reliable test suites, and streamlined CI/CD pipelines. Experienced in managing modular cloud architectures, designing resilient queues, and automating complex client workflows through API setups.
-            </p>
-          </div>
-        </div>
+    <section id="about" class="section glass-panel reveal">
+      <div class="section-header">
+        <div class="section-subtitle">Apresentação</div>
+        <h2 class="section-title">Sobre Mim</h2>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <p>
+          Desenvolvedor Full Stack Sênior com vasta experiência no desenvolvimento de aplicações web escaláveis usando Ruby on Rails e React. Especialista em otimização de performance sob carga pesada, decisões de arquitetura e integrações com Inteligência Artificial moderna.
+        </p>
+        <p>
+          Com forte atuação em cenários de alta complexidade (desenvolvimento full-cycle), possuo experiência profunda no design de APIs seguras, infraestrutura em nuvem, otimização de bancos de dados relacionais e automação completa de fluxos de atendimento.
+        </p>
       </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section reveal-on-scroll">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Competências</span>
-          <h2 class="section-title">Tecnologias & Skills</h2>
-          <div class="section-line" aria-hidden="true"></div>
-        </div>
-        
-        <div class="skills-grid">
-          <div class="glass-card skill-item">
-            <i data-feather="code" aria-hidden="true"></i>
-            <span class="skill-name">Ruby</span>
-          </div>
-          <div class="glass-card skill-item">
-            <i data-feather="layers" aria-hidden="true"></i>
-            <span class="skill-name">Ruby on Rails</span>
-          </div>
-          <div class="glass-card skill-item">
-            <i data-feather="monitor" aria-hidden="true"></i>
-            <span class="skill-name">React / Next.js</span>
-          </div>
-          <div class="glass-card skill-item">
-            <i data-feather="cpu" aria-hidden="true"></i>
-            <span class="skill-name">Rust</span>
-          </div>
-          <div class="glass-card skill-item">
-            <i data-feather="smartphone" aria-hidden="true"></i>
-            <span class="skill-name">Flutter / Mobile</span>
-          </div>
-          <div class="glass-card skill-item">
-            <i data-feather="database" aria-hidden="true"></i>
-            <span class="skill-name">PostgreSQL</span>
-          </div>
-          <div class="glass-card skill-item">
-            <i data-feather="zap" aria-hidden="true"></i>
-            <span class="skill-name">Redis & Sidekiq</span>
-          </div>
-          <div class="glass-card skill-item">
-            <i data-feather="server" aria-hidden="true"></i>
-            <span class="skill-name">Docker & K8s</span>
-          </div>
-          <div class="glass-card skill-item">
-            <i data-feather="cloud" aria-hidden="true"></i>
-            <span class="skill-name">AWS / Azure</span>
-          </div>
-          <div class="glass-card skill-item">
-            <i data-feather="git-branch" aria-hidden="true"></i>
-            <span class="skill-name">CI/CD & Git</span>
-          </div>
-          <div class="glass-card skill-item">
-            <i data-feather="message-circle" aria-hidden="true"></i>
-            <span class="skill-name">Bot Automations</span>
-          </div>
-          <div class="glass-card skill-item">
-            <i data-feather="shield" aria-hidden="true"></i>
-            <span class="skill-name">Offensive Security</span>
-          </div>
-        </div>
+    <section id="skills" class="section glass-panel reveal">
+      <div class="section-header">
+        <div class="section-subtitle">Competências</div>
+        <h2 class="section-title">Tecnologias & Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card"><i data-feather="code"></i><span>Ruby</span></div>
+        <div class="skill-card"><i data-feather="layers"></i><span>Ruby on Rails</span></div>
+        <div class="skill-card"><i data-feather="monitor"></i><span>React / Next.js</span></div>
+        <div class="skill-card"><i data-feather="cpu"></i><span>Rust</span></div>
+        <div class="skill-card"><i data-feather="smartphone"></i><span>Flutter / Kotlin</span></div>
+        <div class="skill-card"><i data-feather="database"></i><span>PostgreSQL</span></div>
+        <div class="skill-card"><i data-feather="zap"></i><span>Redis & Sidekiq</span></div>
+        <div class="skill-card"><i data-feather="server"></i><span>Docker & K8s</span></div>
+        <div class="skill-card"><i data-feather="cloud"></i><span>AWS / Azure / GCP</span></div>
+        <div class="skill-card"><i data-feather="git-branch"></i><span>CI/CD & Git</span></div>
+        <div class="skill-card"><i data-feather="message-circle"></i><span>Bot Automations</span></div>
+        <div class="skill-card"><i data-feather="cpu"></i><span>IA (GenAI)</span></div>
+        <div class="skill-card"><i data-feather="grid"></i><span>Microservices</span></div>
+        <div class="skill-card"><i data-feather="shield"></i><span>Offensive Security</span></div>
       </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="section reveal-on-scroll">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Carreira</span>
-          <h2 class="section-title">Experiência Profissional</h2>
-          <div class="section-line" aria-hidden="true"></div>
+    <section id="experience" class="section reveal">
+      <div class="section-header">
+        <div class="section-subtitle">Carreira</div>
+        <h2 class="section-title">Experiência Profissional</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Diretor de Tecnologia (CTO) & Co-fundador</h3>
+                <div class="timeline-company">FastTask Consultoria e Tecnologia</div>
+              </div>
+              <span class="timeline-date">01/2026 – Presente</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Liderança tecnológica estratégica e arquitetura de software corporativo em sociedade com mais 3 sócios.</li>
+              <li>Foco no desenvolvimento e na consultoria de projetos de médio a grande porte para médias e grandes empresas.</li>
+            </ul>
+          </div>
         </div>
-        
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-dot" aria-hidden="true"></div>
-            <div class="glass-card timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Diretor de Tecnologia (CTO) & Co-fundador</h3>
-                  <div class="timeline-company">FastTask Consultoria e Tecnologia</div>
-                </div>
-                <span class="timeline-date">05/2023 – Presente</span>
-              </div>
-              <ul class="timeline-list">
-                <li>Liderança tecnológica estratégica e arquitetura de software corporativo em sociedade com mais 3 sócios.</li>
-                <li>Foco no desenvolvimento e na consultoria de projetos de médio a grande porte para médias e grandes empresas.</li>
-                <li>Gestão técnica das stacks corporativas, engenharia de confiabilidade e integridade de entregas complexas.</li>
-              </ul>
-            </div>
-          </div>
 
-          <div class="timeline-item">
-            <div class="timeline-dot" aria-hidden="true"></div>
-            <div class="glass-card timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Desenvolvedor Full Cycle Sênior</h3>
-                  <div class="timeline-company">Priorize</div>
-                </div>
-                <span class="timeline-date">06/2025 – Presente</span>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Desenvolvedor Full Cycle Sênior</h3>
+                <div class="timeline-company">Priorize</div>
               </div>
-              <ul class="timeline-list">
-                <li>Liderança na definição de decisões arquiteturais para sistemas altamente disponíveis.</li>
-                <li>Implementação de estratégias de otimização de performance e tuning de banco de dados.</li>
-                <li>Mentoria técnica a desenvolvedores juniores e condução de code reviews rigorosos.</li>
-                <li>Integração de fluxos complexos baseados em Inteligências Artificiais e modelos de linguagem.</li>
-              </ul>
+              <span class="timeline-date">06/2025 – Presente</span>
             </div>
+            <ul class="timeline-list">
+              <li>Liderança na definição de decisões arquiteturais para sistemas altamente disponíveis.</li>
+              <li>Integração de fluxos complexos baseados em Inteligências Artificiais e modelos de linguagem.</li>
+            </ul>
           </div>
-          
-          <div class="timeline-item">
-            <div class="timeline-dot" aria-hidden="true"></div>
-            <div class="glass-card timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Desenvolvedor Full Stack Sênior</h3>
-                  <div class="timeline-company">Appgas</div>
-                </div>
-                <span class="timeline-date">05/2023 – 06/2025</span>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Desenvolvedor Full Stack Sênior</h3>
+                <div class="timeline-company">Appgas</div>
               </div>
-              <ul class="timeline-list">
-                <li>Desenvolvimento e manutenção evolutiva do ecossistema completo de venda e distribuição de gás.</li>
-                <li>Construção e sustentação do App, Admin e Revenda utilizando Ruby on Rails e React.</li>
-                <li>Otimização de processos críticos em background (Sidekiq) e consultas complexas no PostgreSQL.</li>
-                <li>Manutenção e criação de pipelines eficientes de integração contínua (GitHub Actions).</li>
-              </ul>
+              <span class="timeline-date">05/2023 – 06/2025</span>
             </div>
+            <ul class="timeline-list">
+              <li>Desenvolvimento e manutenção evolutiva do ecossistema completo de venda e distribuição de gás.</li>
+              <li>Otimização de processos críticos em background (Sidekiq) e consultas complexas no PostgreSQL.</li>
+            </ul>
           </div>
-          
-          <div class="timeline-item">
-            <div class="timeline-dot" aria-hidden="true"></div>
-            <div class="glass-card timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Desenvolvedor Full Stack</h3>
-                  <div class="timeline-company">Priorize</div>
-                </div>
-                <span class="timeline-date">01/2022 – 01/2023</span>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Desenvolvedor Full Stack</h3>
+                <div class="timeline-company">Priorize</div>
               </div>
-              <ul class="timeline-list">
-                <li>Desenvolvimento de novas funcionalidades full-stack ponta a ponta com Rails e React.</li>
-                <li>Modelagem e design de APIs RESTful integradas e documentadas de alta performance.</li>
-                <li>Melhoria nos índices de usabilidade de componentes web focados no usuário.</li>
-              </ul>
+              <span class="timeline-date">01/2022 – 01/2023</span>
             </div>
+            <ul class="timeline-list">
+              <li>Desenvolvimento de novas funcionalidades full-stack ponta a ponta com Rails e React.</li>
+              <li>Modelagem e design de APIs RESTful integradas e documentadas de alta performance.</li>
+            </ul>
           </div>
-          
-          <div class="timeline-item">
-            <div class="timeline-dot" aria-hidden="true"></div>
-            <div class="glass-card timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Desenvolvedor Front End</h3>
-                  <div class="timeline-company">Mobitype + Priorize</div>
-                </div>
-                <span class="timeline-date">09/2021 – 01/2022</span>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Desenvolvedor Front End</h3>
+                <div class="timeline-company">Mobitype + Priorize</div>
               </div>
-              <ul class="timeline-list">
-                <li>Desenvolvimento de layouts responsivos fiéis ao design com React e pré-processadores.</li>
-                <li>Foco em otimização de tempo de carregamento e compatibilidade entre navegadores modernos.</li>
-                <li>Colaboração direta com times de design de interface (UI/UX).</li>
-              </ul>
+              <span class="timeline-date">09/2021 – 01/2022</span>
             </div>
+            <ul class="timeline-list">
+              <li>Desenvolvimento de layouts responsivos fiéis ao design com React e pré-processadores.</li>
+              <li>Foco em otimização de tempo de carregamento e compatibilidade entre navegadores modernos.</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section reveal-on-scroll">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Portfólio</span>
-          <h2 class="section-title">Projetos Profissionais</h2>
-          <div class="section-line" aria-hidden="true"></div>
-        </div>
+    <section id="projects" class="section reveal">
+      <div class="section-header">
+        <div class="section-subtitle">Portfólio</div>
+        <h2 class="section-title">Projetos Profissionais</h2>
+      </div>
+      <div class="projects-grid">
+        <!-- Appgas -->
+        <article class="project-card">
+          <img src="https://api.microlink.io/?url=https%3A%2F%2Fappgas.com&screenshot=true&embed=screenshot.url&viewport.width=1280&viewport.height=800" alt="Appgas" class="project-img">
+          <div class="project-info">
+            <h3 class="project-title">
+              Ecossistema Appgas
+              <span class="project-status">Produção</span>
+            </h3>
+            <p class="project-desc">Estruturação de toda a arquitetura de canais digitais para distribuição de gás de cozinha, abrangendo quatro plataformas web interconectadas e apps mobile.</p>
+            <div class="project-tags">
+              <span class="tag">Ruby on Rails</span>
+              <span class="tag">React</span>
+              <span class="tag">Mobile</span>
+            </div>
+            <div class="project-links">
+              <a href="https://appgas.com" target="_blank"><i data-feather="external-link"></i> Visitar Appgas</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Priorize -->
+        <article class="project-card">
+          <img src="images/priorize_preview.png" alt="Priorize" class="project-img" onerror="this.src='https://api.microlink.io/?url=https%3A%2F%2Fpriorize.org&screenshot=true&embed=screenshot.url&viewport.width=1280&viewport.height=800'">
+          <div class="project-info">
+            <h3 class="project-title">
+              Priorize.org
+              <span class="project-status">Produção</span>
+            </h3>
+            <p class="project-desc">Rede social governamental projetada para votação e deliberação de propostas, aproximando gestores de suas comunidades.</p>
+            <div class="project-tags">
+              <span class="tag">Ruby on Rails</span>
+              <span class="tag">React</span>
+              <span class="tag">E-Democracy</span>
+            </div>
+            <div class="project-links">
+              <a href="https://priorize.org" target="_blank"><i data-feather="external-link"></i> Visitar Priorize</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cinnamon -->
+        <article class="project-card">
+          <img src="images/cinnamon_preview.png" alt="Cinnamon Run Club" class="project-img" onerror="this.src='https://api.microlink.io/?url=https%3A%2F%2Fcinnamonrun.club&screenshot=true&embed=screenshot.url&viewport.width=1280&viewport.height=800'">
+          <div class="project-info">
+            <h3 class="project-title">
+              Cinnamon Run Club
+              <span class="project-status">Produção</span>
+            </h3>
+            <p class="project-desc">Automações de WhatsApp e Instagram para realizar o autoatendimento e inscrições de clientes.</p>
+            <div class="project-tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">WhatsApp API</span>
+              <span class="tag">Automations</span>
+            </div>
+            <div class="project-links">
+              <a href="https://cinnamonrun.club" target="_blank"><i data-feather="external-link"></i> Visitar CRC</a>
+            </div>
+          </div>
+        </article>
         
-        <div class="projects-grid">
-          
-          <!-- Appgas Ecosystem -->
-          <article class="glass-card project-card">
-            <div class="project-card-banner">
-              <img src="https://api.microlink.io/?url=https%3A%2F%2Fappgas.com&screenshot=true&embed=screenshot.url&viewport.width=1280&viewport.height=800" alt="Live preview do site Appgas.com" class="project-card-image" loading="lazy">
+        <!-- Fasttask -->
+        <article class="project-card">
+          <img src="https://api.microlink.io/?url=https%3A%2F%2Ffasttask.com.br&screenshot=true&embed=screenshot.url&viewport.width=1280&viewport.height=800" alt="Fasttask" class="project-img">
+          <div class="project-info">
+            <h3 class="project-title">
+              Fasttask.com.br
+              <span class="project-status">Produção</span>
+            </h3>
+            <p class="project-desc">Landing page institucional focada em conversão para consultoria corporativa de tecnologia e engenharia de software.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Lead Capture</span>
             </div>
-            <div class="project-card-body">
-              <h3 class="project-card-title">
-                Ecossistema Appgas
-                <span class="project-card-status">Produção</span>
-              </h3>
-              <p class="project-card-desc">
-                Estruturação de toda a arquitetura de canais digitais para distribuição de gás de cozinha, abrangendo quatro plataformas web interconectadas e aplicativos mobile para consumo.
-              </p>
-              
-              <div class="ecosystem-list">
-                <div class="ecosystem-item">
-                  <span class="ecosystem-name">appgas.com</span>
-                  <a href="https://appgas.com" target="_blank" rel="noopener noreferrer" class="ecosystem-link">
-                    Institucional <i data-feather="external-link" aria-hidden="true"></i>
-                  </a>
-                </div>
-                <div class="ecosystem-item">
-                  <span class="ecosystem-name">app.appgas.com</span>
-                  <a href="https://app.appgas.com" target="_blank" rel="noopener noreferrer" class="ecosystem-link">
-                    Web App Cliente <i data-feather="external-link" aria-hidden="true"></i>
-                  </a>
-                </div>
-                <div class="ecosystem-item">
-                  <span class="ecosystem-name">admin.appgas.com</span>
-                  <a href="https://admin.appgas.com" target="_blank" rel="noopener noreferrer" class="ecosystem-link">
-                    Painel Admin <i data-feather="external-link" aria-hidden="true"></i>
-                  </a>
-                </div>
-                <div class="ecosystem-item">
-                  <span class="ecosystem-name">revenda.appgas.com</span>
-                  <a href="https://revenda.appgas.com" target="_blank" rel="noopener noreferrer" class="ecosystem-link">
-                    Revendas <i data-feather="external-link" aria-hidden="true"></i>
-                  </a>
-                </div>
-                <div class="ecosystem-item" style="border-color: oklch(78.5% 0.18 195 / 20%); background: oklch(78.5% 0.18 195 / 4%);">
-                  <span class="ecosystem-name" style="color: var(--color-primary);"><i data-feather="play" style="width: 12px; height: 12px; vertical-align: middle; margin-right: 4px;"></i> Appgas (Android)</span>
-                  <a href="https://play.google.com/store/apps/details?id=br.com.mobile2you.appgas.costumer" target="_blank" rel="noopener noreferrer" class="ecosystem-link" style="color: var(--color-primary);">
-                    Google Play <i data-feather="download" aria-hidden="true"></i>
-                  </a>
-                </div>
-                <div class="ecosystem-item" style="border-color: oklch(68.5% 0.23 330 / 20%); background: oklch(68.5% 0.23 330 / 4%);">
-                  <span class="ecosystem-name" style="color: var(--color-secondary);"><i data-feather="smartphone" style="width: 12px; height: 12px; vertical-align: middle; margin-right: 4px;"></i> Appgas (iOS)</span>
-                  <a href="https://apps.apple.com/us/app/appgas-g%C3%A1s-de-cozinha-online/id1491812654" target="_blank" rel="noopener noreferrer" class="ecosystem-link" style="color: var(--color-secondary);">
-                    App Store <i data-feather="download" aria-hidden="true"></i>
-                  </a>
-                </div>
-              </div>
-              
-              <div class="project-card-tags">
-                <span class="badge">Ruby on Rails</span>
-                <span class="badge">React</span>
-                <span class="badge">Mobile Apps</span>
-                <span class="badge">PostgreSQL</span>
-                <span class="badge">Redis / Sidekiq</span>
-              </div>
+            <div class="project-links">
+              <a href="https://fasttask.com.br" target="_blank"><i data-feather="external-link"></i> Visitar Fasttask</a>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <!-- Priorize.org -->
-          <article class="glass-card project-card">
-            <div class="project-card-banner">
-              <img src="images/priorize_preview.png" alt="Mockup do painel da rede social Priorize.org" class="project-card-image" loading="lazy">
+        <!-- Noblex Contabilidade -->
+        <article class="project-card">
+          <img src="https://api.microlink.io/?url=https%3A%2F%2Fnoblexcontabilidade.com.br%2F&screenshot=true&embed=screenshot.url&viewport.width=1280&viewport.height=800" alt="Noblex Contabilidade" class="project-img">
+          <div class="project-info">
+            <h3 class="project-title">
+              Noblex Contabilidade
+              <span class="project-status">Online</span>
+            </h3>
+            <p class="project-desc">Landing page e site institucional moderno para apresentação de serviços contábeis e captação de novos clientes.</p>
+            <div class="project-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">Landing Page</span>
             </div>
-            <div class="project-card-body">
-              <h3 class="project-card-title">
-                Priorize.org
-                <span class="project-card-status">Produção</span>
-              </h3>
-              <p class="project-card-desc">
-                Rede social com foco governamental e empresarial projetada para votação e deliberação de propostas em comunidades. Ajuda gestores e cidadãos a proporem e votarem ideias, aproximando a gestão pública e corporativa de suas comunidades de forma transparente.
-              </p>
-              <div class="project-card-tags">
-                <span class="badge">Ruby on Rails</span>
-                <span class="badge">React</span>
-                <span class="badge">Social Network</span>
-                <span class="badge">E-Democracy</span>
-              </div>
-              <div class="project-card-links">
-                <a href="https://priorize.org" target="_blank" rel="noopener noreferrer" class="project-link">
-                  <i data-feather="external-link" aria-hidden="true"></i> Visitar Priorize
-                </a>
-              </div>
+            <div class="project-links">
+              <a href="https://noblexcontabilidade.com.br/" target="_blank"><i data-feather="external-link"></i> Visitar Landing Page</a>
             </div>
-          </article>
-
-          <!-- Cinnamon Run Club -->
-          <article class="glass-card project-card">
-            <div class="project-card-banner">
-              <img src="images/cinnamon_preview.png" alt="Mockup de automação de chatbot do Cinnamon Run Club" class="project-card-image" loading="lazy">
-            </div>
-            <div class="project-card-body">
-              <h3 class="project-card-title">
-                Cinnamon Run Club
-                <span class="project-card-status">Produção</span>
-              </h3>
-              <p class="project-card-desc">
-                Desenvolvimento focado na construção de automações de WhatsApp e Instagram para realizar o autoatendimento dos clientes da CRC, otimizando o fluxo de atendimento, esclarecimento de dúvidas e inscrições de forma totalmente integrada.
-              </p>
-              <div class="project-card-tags">
-                <span class="badge">Automações</span>
-                <span class="badge">WhatsApp API</span>
-                <span class="badge">Instagram Webhook</span>
-                <span class="badge">Node.js</span>
-              </div>
-              <div class="project-card-links">
-                <a href="https://cinnamonrun.club" target="_blank" rel="noopener noreferrer" class="project-link">
-                  <i data-feather="external-link" aria-hidden="true"></i> Visitar CRC
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Fasttask.com.br -->
-          <article class="glass-card project-card">
-            <div class="project-card-banner">
-              <img src="https://api.microlink.io/?url=https%3A%2F%2Ffasttask.com.br&screenshot=true&embed=screenshot.url&viewport.width=1280&viewport.height=800" alt="Live preview do site Fasttask.com.br" class="project-card-image" loading="lazy">
-            </div>
-            <div class="project-card-body">
-              <h3 class="project-card-title">
-                Fasttask.com.br
-                <span class="project-card-status">Produção</span>
-              </h3>
-              <p class="project-card-desc">
-                Landing page e site institucional moderno da FastTask Consultoria e Tecnologia. Desenvolvido para apresentar as soluções corporativas em engenharia de software, captar novos leads de médias a grandes empresas e divulgar o portfólio de grandes entregas.
-              </p>
-              <div class="project-card-tags">
-                <span class="badge">Landing Page</span>
-                <span class="badge">React / HTML5</span>
-                <span class="badge">CSS Variables</span>
-                <span class="badge">Lead Capture</span>
-              </div>
-              <div class="project-card-links">
-                <a href="https://fasttask.com.br" target="_blank" rel="noopener noreferrer" class="project-link">
-                  <i data-feather="external-link" aria-hidden="true"></i> Visitar Fasttask
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Noblex Contabilidade -->
-          <article class="glass-card project-card">
-            <div class="project-card-banner">
-              <img src="https://api.microlink.io/?url=https%3A%2F%2Fnoblex-contabilidade.vercel.app%2F&screenshot=true&embed=screenshot.url&viewport.width=1280&viewport.height=800" alt="Live preview da landing page Noblex Contabilidade" class="project-card-image" loading="lazy">
-            </div>
-            <div class="project-card-body">
-              <h3 class="project-card-title">
-                Noblex Contabilidade
-                <span class="project-card-status">Online</span>
-              </h3>
-              <p class="project-card-desc">
-                Desenvolvimento de landing page e site institucional moderno para apresentação de serviços contábeis, diferenciais da marca e captação de novos clientes de forma digital, com design totalmente otimizado e responsivo.
-              </p>
-              <div class="project-card-tags">
-                <span class="badge">Landing Page</span>
-                <span class="badge">Next.js / Vercel</span>
-                <span class="badge">CSS Variables</span>
-                <span class="badge">Responsive Design</span>
-              </div>
-              <div class="project-card-links">
-                <a href="https://noblex-contabilidade.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
-                  <i data-feather="external-link" aria-hidden="true"></i> Visitar Landing Page
-                </a>
-              </div>
-            </div>
-          </article>
-          
-        </div>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- CNPJs & Corporate Structure Section -->
-    <section id="notes" class="section reveal-on-scroll">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Estrutura Corporativa</span>
-          <h2 class="section-title">Empresas & CNPJs</h2>
-          <div class="section-line" aria-hidden="true"></div>
+    <!-- Notes Section -->
+    <section id="notes" class="section glass-panel reveal">
+      <div class="section-header">
+        <div class="section-subtitle">Estrutura Corporativa</div>
+        <h2 class="section-title">Empresas & CNPJs</h2>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 32px;">
+        <div>
+          <h3 style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;"><i data-feather="briefcase" style="color: var(--color-primary);"></i> FastTask Consultoria e Tecnologia</h3>
+          <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-primary); margin-bottom: 8px;">CNPJ: 64.733.994/0001-38</p>
+          <p>Sociedade estabelecida com outros 3 sócios para atuar no desenvolvimento de grandes projetos corporativos (CTO).</p>
         </div>
-        
-        <div class="notes-container">
-          <div class="glass-card notes-card">
-            <h3 class="notes-title"><i data-feather="briefcase" aria-hidden="true"></i> FastTask Consultoria e Tecnologia</h3>
-            <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-primary); margin-bottom: 8px;">
-              CNPJ: 64.733.994/0001-38
-            </p>
-            <p>
-              Sociedade estabelecida com outros 3 sócios com o propósito de atuar na consultoria de tecnologia e no desenvolvimento de projetos de software de médio a grande porte para médias e grandes corporações. Liderança técnica exercida sob o papel de Diretor de Tecnologia (CTO).
-            </p>
-          </div>
-          
-          <div class="glass-card notes-card">
-            <h3 class="notes-title"><i data-feather="terminal" aria-hidden="true"></i> Outerspace Coding</h3>
-            <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-secondary); margin-bottom: 8px;">
-              CNPJ: 44.318.465/0001-60
-            </p>
-            <p>
-              Estrutura empresarial própria voltada para o atendimento direto a clientes de menor porte, fornecendo consultoria especializada, soluções sob demanda, automações ágeis e serviços personalizados de desenvolvimento executados de forma individual (solo).
-            </p>
-          </div>
+        <div>
+          <h3 style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;"><i data-feather="terminal" style="color: var(--color-secondary);"></i> Outerspace Coding</h3>
+          <p style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-secondary); margin-bottom: 8px;">CNPJ: 44.318.465/0001-60</p>
+          <p>Estrutura empresarial própria (solo) para desenvolvimento sob demanda, automações e soluções ágeis.</p>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section reveal-on-scroll">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Contato</span>
-          <h2 class="section-title">Vamos Conversar?</h2>
-          <div class="section-line" aria-hidden="true"></div>
-        </div>
-        
-        <div class="contact-grid">
-          <div class="contact-info">
-            <h3 class="contact-title">Informações de Contato</h3>
-            
-            <div class="contact-list">
-              <div class="contact-item">
-                <div class="contact-icon" aria-hidden="true">
-                  <i data-feather="mail"></i>
-                </div>
-                <div class="contact-details">
-                  <h4>E-mail</h4>
-                  <a href="mailto:lima.jesuscc@gmail.com" aria-label="Enviar email para lima.jesuscc@gmail.com">lima.jesuscc@gmail.com</a>
-                </div>
-              </div>
-              
-              <div class="contact-item">
-                <div class="contact-icon" aria-hidden="true">
-                  <i data-feather="phone"></i>
-                </div>
-                <div class="contact-details">
-                  <h4>Telefone / WhatsApp</h4>
-                  <a href="https://wa.me/5511970188441" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">+55 (11) 97018-8441</a>
-                </div>
-              </div>
-              
-              <div class="contact-item">
-                <div class="contact-icon" aria-hidden="true">
-                  <i data-feather="github"></i>
-                </div>
-                <div class="contact-details">
-                  <h4>Perfis no GitHub</h4>
-                  <div class="contact-social-links">
-                    <a href="https://github.com/IgorLimaJesus" target="_blank" rel="noopener noreferrer">Profissional</a>
-                    <a href="https://github.com/JesusGautamah" target="_blank" rel="noopener noreferrer">Pessoal</a>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="contact-item">
-                <div class="contact-icon" aria-hidden="true">
-                  <i data-feather="package"></i>
-                </div>
-                <div class="contact-details">
-                  <h4>RubyGems</h4>
-                  <a href="https://rubygems.org/profiles/jesus_gautamah" target="_blank" rel="noopener noreferrer" aria-label="Acessar RubyGems de Igor">jesus_gautamah</a>
-                </div>
-              </div>
-            </div>
+    <section id="contact" class="section glass-panel reveal" style="margin-bottom: 48px;">
+      <div class="section-header">
+        <div class="section-subtitle">Contato</div>
+        <h2 class="section-title">Vamos Conversar?</h2>
+      </div>
+      
+      <div class="contact-info-centered">
+        <div class="contact-item">
+          <div class="contact-icon"><i data-feather="mail"></i></div>
+          <div class="contact-details">
+            <h4>E-mail</h4>
+            <a href="mailto:lima.jesuscc@gmail.com">lima.jesuscc@gmail.com</a>
           </div>
-          
-          <div class="glass-card timeline-content">
-            <form id="contact-form" class="contact-form" action="#" method="POST">
-              <!-- Honeypot anti-spam protection -->
-              <input type="text" name="b_name" id="b_name" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
-              
-              <div class="form-group">
-                <label for="form-name">Nome</label>
-                <input type="text" id="form-name" name="name" required class="form-input" placeholder="Seu nome completo">
-              </div>
-              
-              <div class="form-group">
-                <label for="form-email">E-mail</label>
-                <input type="email" id="form-email" name="email" required class="form-input" placeholder="seu@email.com">
-              </div>
-              
-              <div class="form-group">
-                <label for="form-message">Mensagem</label>
-                <textarea id="form-message" name="message" required class="form-input form-input-textarea" placeholder="Olá Igor, gostaria de conversar sobre..."></textarea>
-              </div>
-              
-              <button type="submit" class="glow-btn glow-btn-primary" style="width: 100%;">Enviar Mensagem</button>
-            </form>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i data-feather="phone"></i></div>
+          <div class="contact-details">
+            <h4>WhatsApp</h4>
+            <a href="https://wa.me/5511970188441" target="_blank">+55 (11) 97018-8441</a>
           </div>
         </div>
       </div>
@@ -617,163 +364,206 @@
 
   </main>
 
-  <!-- Footer -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-info">
-          <h3>Igor L. de Jesus</h3>
-          <p>Senior Full Stack Developer</p>
-        </div>
-        
-        <div class="footer-socials">
-          <a href="https://github.com/IgorLimaJesus" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="GitHub Profissional">
-            <i data-feather="github" aria-hidden="true"></i>
-          </a>
-          <a href="https://rubygems.org/profiles/jesus_gautamah" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="RubyGems">
-            <i data-feather="package" aria-hidden="true"></i>
-          </a>
-          <a href="mailto:lima.jesuscc@gmail.com" class="footer-social-btn" aria-label="Enviar E-mail">
-            <i data-feather="mail" aria-hidden="true"></i>
-          </a>
-          <a href="https://wa.me/5511970188441" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Conversar no WhatsApp">
-            <i data-feather="message-circle" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <p class="footer-copy">
-          &copy; <span id="current-year"></span> Igor L. de Jesus. Todos os direitos reservados.
-        </p>
-        <a href="#home" class="footer-link">Voltar ao topo</a>
-      </div>
-    </div>
-  </footer>
+  <a href="https://wa.me/5511970188441" class="whatsapp-float" target="_blank" aria-label="Fale comigo no WhatsApp">
+    <i data-feather="message-circle"></i>
+  </a>
 
-  <!-- Page Interactivity Scripts -->
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // 1. Initialize Feather Icons
-      feather.replace();
+    // Initialize icons
+    feather.replace();
 
-      // 2. Set Current Year in Footer
-      document.getElementById('current-year').textContent = new Date().getFullYear();
+    // Canvas Particle System
+    const canvas = document.createElement('canvas');
+    canvas.style.position = 'fixed';
+    canvas.style.top = '0';
+    canvas.style.left = '0';
+    canvas.style.width = '100vw';
+    canvas.style.height = '100vh';
+    canvas.style.zIndex = '-1';
+    canvas.style.pointerEvents = 'none';
+    document.body.prepend(canvas);
 
-      // 3. Mobile Menu Toggle
-      const menuToggle = document.getElementById('menu-toggle');
-      const navLinks = document.getElementById('nav-links');
+    const ctx = canvas.getContext('2d');
+    let width, height, particles = [];
+    const colors = ['rgba(0, 178, 255, 0.4)', 'rgba(255, 45, 117, 0.4)', 'rgba(255, 255, 255, 0.25)'];
 
-      menuToggle.addEventListener('click', () => {
-        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-        menuToggle.setAttribute('aria-expanded', !isExpanded);
-        navLinks.classList.toggle('active');
-      });
+    const resize = () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    };
+    window.addEventListener('resize', resize);
+    resize();
 
-      // Close mobile menu when clicking outside or on a link
-      document.addEventListener('click', (e) => {
-        if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
-          menuToggle.setAttribute('aria-expanded', 'false');
-          navLinks.classList.remove('active');
+    class Particle {
+      constructor() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.size = Math.random() * 1.5 + 1;
+        this.vx = (Math.random() - 0.5) * 0.3;
+        this.vy = -(Math.random() * 0.5 + 0.2);
+        this.color = colors[Math.floor(Math.random() * colors.length)];
+        this.behavior = Math.random() > 0.3 ? 1 : -1; // 70% repel, 30% attract
+      }
+      update(mX, mY) {
+        this.x += this.vx;
+        this.y += this.vy;
+        
+        if (this.y < -10) this.y = height + 10;
+        if (this.x < -10) this.x = width + 10;
+        if (this.x > width + 10) this.x = -10;
+        
+        if (mX !== undefined && mY !== undefined) {
+          const dx = mX - this.x;
+          const dy = mY - this.y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          const maxDist = 120;
+          
+          if (distance < maxDist) {
+            const force = (maxDist - distance) / maxDist;
+            this.x -= (dx / distance) * force * 1.5 * this.behavior;
+            this.y -= (dy / distance) * force * 1.5 * this.behavior;
+          }
         }
-      });
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+      }
+    }
+
+    for (let i = 0; i < 350; i++) particles.push(new Particle());
+
+    let mX, mY;
+    document.addEventListener('mousemove', e => { 
+      mX = e.clientX; 
+      mY = e.clientY; 
+      document.body.style.setProperty('--mouse-x', mX / window.innerWidth);
+      document.body.style.setProperty('--mouse-y', mY / window.innerHeight);
+    });
+    document.addEventListener('mouseleave', () => { mX = undefined; mY = undefined; });
+    const animate = () => {
+      ctx.clearRect(0, 0, width, height);
+      particles.forEach(p => { p.update(mX, mY); p.draw(); });
+      requestAnimationFrame(animate);
+    };
+    animate();
+  </script>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script>
+    // Initialize icons
+    feather.replace();
+
+    // GSAP Animations Setup
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Initial Load - Hero & Sidebar
+    const tl = gsap.timeline();
+    
+    if (window.innerWidth > 768) {
+      tl.from('.sidebar', { x: -50, opacity: 0, duration: 1, ease: 'power3.out' }, 0);
+    }
+    
+    tl.from('.hero .section-subtitle', { y: 20, opacity: 0, duration: 0.6, ease: 'power3.out' }, window.innerWidth > 768 ? 0.4 : 0)
+      .from('.hero h1', { y: 30, opacity: 0, duration: 0.8, ease: 'power3.out' }, '-=0.4')
+      .from('.hero p', { y: 20, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.6')
+      .from('.hero-btns .btn', { y: 20, opacity: 0, duration: 0.6, stagger: 0.2, ease: 'power3.out' }, '-=0.4')
+      .from('.scroll-indicator', { opacity: 0, duration: 1 }, '+=0.2');
+
+    // Sections ScrollTrigger
+    gsap.utils.toArray('.section').forEach(section => {
+      if (section.id === 'home') return;
+
+      const title = section.querySelector('.section-title');
+      const subtitle = section.querySelector('.section-subtitle');
       
-      navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-          menuToggle.setAttribute('aria-expanded', 'false');
-          navLinks.classList.remove('active');
-        });
-      });
-
-      // 4. Typing Animation (Typed.js)
-      new Typed('#typed', {
-        strings: [
-          'Senior Full Stack Developer',
-          'Especialista em Ruby on Rails',
-          'Desenvolvedor React / Next.js',
-          'Expert em Automações e Integrações'
-        ],
-        typeSpeed: 50,
-        backSpeed: 30,
-        backDelay: 1500,
-        loop: true,
-        showCursor: true,
-        cursorChar: '|'
-      });
-
-      // 5. Scroll Progress Bar & Header Shadow
-      const scrollProgress = document.getElementById('scroll-progress');
-      const header = document.getElementById('header');
-
-      window.addEventListener('scroll', () => {
-        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        
-        scrollProgress.style.width = scrolled + '%';
-
-        if (winScroll > 20) {
-          header.classList.add('scrolled');
-        } else {
-          header.classList.remove('scrolled');
+      const stTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 85%', // Trigger slightly earlier
+          toggleActions: 'play none none reverse'
         }
       });
 
-      // 6. Progressive Enhancement: Reveal on scroll for browsers without native view timelines
-      if (!CSS.supports('(animation-timeline: view()) and (animation-range: entry)')) {
-        const revealElements = document.querySelectorAll('.reveal-on-scroll');
-        
-        const observerOptions = {
-          root: null,
-          threshold: 0.1,
-          rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.style.opacity = '1';
-              entry.target.style.transform = 'translateY(0) scale(1)';
-              entry.target.style.transition = 'opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
-              observer.unobserve(entry.target);
-            }
-          });
-        }, observerOptions);
-
-        revealElements.forEach(el => {
-          // Set initial styles for fallback browsers
-          el.style.opacity = '0';
-          el.style.transform = 'translateY(30px) scale(0.97)';
-          observer.observe(el);
-        });
+      if (subtitle && title) {
+        stTl.from(subtitle, { x: -20, opacity: 0, duration: 0.5, ease: 'power2.out' })
+            .from(title, { x: -20, opacity: 0, duration: 0.5, ease: 'power2.out' }, '-=0.3');
       }
 
-      // 7. Contact Form Handling
-      const contactForm = document.getElementById('contact-form');
-      contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+      const cards = section.querySelectorAll('.skill-card, .project-card, .notes-card');
+      if (cards.length > 0) {
+        gsap.set(cards, { transition: 'none' });
+        stTl.from(cards, { 
+          y: 40, opacity: 0, duration: 0.6, stagger: 0.1, ease: 'back.out(1.2)', clearProps: 'all',
+          onComplete: () => cards.forEach(c => c.style.transition = '')
+        }, '-=0.2');
+      }
+
+      const timelineItems = section.querySelectorAll('.timeline-item');
+      if (timelineItems.length > 0) {
+        gsap.set(timelineItems, { transition: 'none' });
+        stTl.from(timelineItems, { 
+          x: -30, opacity: 0, duration: 0.6, stagger: 0.15, ease: 'power3.out', clearProps: 'all',
+          onComplete: () => timelineItems.forEach(c => c.style.transition = '')
+        }, '-=0.2');
+      }
+      
+      const paragraphs = section.querySelectorAll('p:not(.project-desc):not(.timeline-company)');
+      if (section.id === 'about' && paragraphs.length > 0) {
+        stTl.from(paragraphs, { y: 20, opacity: 0, duration: 0.6, stagger: 0.2, ease: 'power2.out' }, '-=0.4');
+      }
+
+      const contactItems = section.querySelectorAll('.contact-item');
+      if (contactItems.length > 0) {
+        gsap.set(contactItems, { transition: 'none' });
+        stTl.from(contactItems, { 
+          x: -20, opacity: 0, duration: 0.5, stagger: 0.1, ease: 'power2.out', clearProps: 'all',
+          onComplete: () => contactItems.forEach(c => c.style.transition = '')
+        }, '-=0.2');
+      }
+
+    });
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    
+    menuBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+
+    // Close sidebar when clicking a link on mobile
+    const navLinks = document.querySelectorAll('.nav-item a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        sidebar.classList.remove('active');
         
-        // Spam prevention check (honeypot)
-        const honeypot = document.getElementById('b_name').value;
-        if (honeypot) return;
+        // Update active class
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
 
-        const name = document.getElementById('form-name').value;
-        const email = document.getElementById('form-email').value;
-        const message = document.getElementById('form-message').value;
+    // Update active nav link on scroll
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 150) {
+          current = section.getAttribute('id');
+        }
+      });
 
-        // Construct mailto link
-        const recipient = 'lima.jesuscc@gmail.com';
-        const subject = encodeURIComponent(`Contato Portfólio - ${name}`);
-        const body = encodeURIComponent(
-          `Nome: ${name}\n` +
-          `E-mail para resposta: ${email}\n\n` +
-          `Mensagem:\n${message}`
-        );
-
-        // Trigger native email client
-        window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
-        
-        contactForm.reset();
+      navLinks.forEach(li => {
+        li.classList.remove('active');
+        if (li.getAttribute('href') === `#${current}`) {
+          li.classList.add('active');
+        }
       });
     });
   </script>
