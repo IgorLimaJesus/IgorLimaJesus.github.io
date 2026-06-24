@@ -708,7 +708,14 @@ a {
 @media (max-width: 992px) {
   .contact-info-centered {
     flex-direction: column;
-    gap: 24px;
+    align-items: stretch;
+    gap: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact-item {
+    justify-content: flex-start;
   }
 }
 
